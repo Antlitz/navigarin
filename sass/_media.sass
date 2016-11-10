@@ -1,0 +1,149 @@
+@import "bourbon"
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and ( max-width : 1200px )
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and ( max-width : 992px )
+	.review
+		iframe
+			padding: 0!important
+
+/* Small Devices, Tablets */
+@media only screen and ( max-width : 768px )
+	.header
+		.contacts-list
+			li
+				display: block
+		.social-list
+			text-align: right
+		.nav-logo
+			display: inline-block
+			max-width: 80%
+		.nav-mobile
+			display: inline-block
+			width: 17%
+			vertical-align: middle
+		.nav-menu
+			display: none
+		.menu-list
+			float: none
+			text-align: center
+			li
+				position: relative
+				display: block
+				width: 100%
+				height: auto
+				line-height: 48px
+				&:after,&:before
+					display: none!important
+				&:hover
+					background: inherit
+				&:first-of-type
+					margin: 0
+					padding: 0
+				a
+					font-size: 15px
+					font-weight: bold
+					display: inline
+					text-decoration: none
+					&:after
+						content: ''
+						position: absolute
+						top: 45px
+						left: 0
+						display: block
+						width: 100%
+						height: 2px
+						background: white
+						opacity: 0
+						transition: .3s ease
+					&:hover:after
+						opacity: .6
+
+			.menu-dropdown
+				display: block
+				position: static
+				max-width: 100%
+				text-align: center
+				li
+					line-height: 48px
+					background: transparent
+					&:hover
+						background: inherit
+					a
+						display: inline
+						padding: 0
+						text-decoration: none
+						color: #2195f3
+
+
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.header
+		.social-list
+			font-size: 20px
+			li
+				padding: 0
+				display: block
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.example
+		&.-full
+			iframe
+				height: 666px
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
